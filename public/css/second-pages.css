@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(45deg, #4a00e0, #8e2de2, #4a00e0);
+    align-items: center;
+    justify-content: center;
+}
+
+main header {
+    width: 80vw;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.img-logo {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    margin: 20px;
+}
+
+main header .text {
+    align-items: center;
+    justify-content: center;
+}
+
+main header .text h1 {
+    font-size: 2.4em;
+}
+
+main header .text h2 {
+    font-size: 1.6em;
+}
+
+main header .return {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1em;
+}
+
+main header .return a {
+    min-width: 120px;
+    border-radius: 4px;
+    padding: 6px;
+    text-decoration: none;
+    background: #242423;
+    color:rgb(255, 255, 255);
+}
+
+main header .return a:hover {
+    background: #141414;
+}
+
+main .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #242423;
+    height: 85vh;
+    width: 80vw;
+    border-radius: 8px;
+    margin: 12px auto;
+}
+
+.container .box {
+    min-height: 40em;
+    padding: 1.2em;
+    border-radius: 8px;
+    background: #686866;
+    margin: auto 1.8em auto 1.8em;
+}
+
+.container .box p {
+    font-size: 1.2em;
+}
+
+.container .box h2{
+    font-size: 1.6em;
+    color:rgb(20, 20, 20);
+}
+
+.container .box img {
+    width: 16em;
+    border-radius: 8px;
+}
+
+.left {
+    float: left;
+    width: 36%;
+}
+
+.right {
+    float: right;
+    width: 60%;
+    height: 400px;
+}
+
+.personal-data  input {
+    width: 100%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 5px;
+    color: white;
+    background: #242423;
+}
+
+.personal-data input::placeholder {
+    color: white;
+    opacity: 0.4;
+}
+
+.clear {
+    clear: both;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+textarea {
+    padding: 5px;
+    resize: none;
+    width: 100%;
+    height: 100%;
+}
+
+.container .box a, .submit-button input, form .check, textarea{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1em;
+    letter-spacing: 1px;
+}
+
+.container .box a div, .submit-button input, form .check, textarea {
+    border-radius: 4px;
+    padding: 0.8em;
+    margin-top: 0.5em;
+    background: #242423;
+}
+
+.container .box a div:hover, .submit-button input:hover, .check:hover, .personal-data input:hover{
+    background: #141414;
+    transition: background 200ms;
+}
+
+@media only screen and (max-width: 1440px) {
+    main .container {
+        display: block;
+        height: auto;
+        width: 90vw;
+    }
+
+    main header {
+        width: 90vw;
+    }
+
+    .container .box {
+        margin: 20px 20px;
+        min-height: 30em;
+    }
+
+    .container {
+        padding: 1px;
+    }
+    
+    .container .box img {
+        width: 12em;
+    }
+
+    main header .text h1 {
+        font-size: 2.4em;
+    }
+    
+    main header .text h2 {
+        font-size: 1.6em;
+    }
+
+    main header .return {
+        font-size: 0.8em;
+    }
+    
+}
+
+@media only screen and (max-width: 425px) {
+
+    .left {
+        float: none;
+        width: 100%;
+    }
+
+    .right {
+        float: none;
+        width: 100%;
+        height: 400px;
+    }
+
+    .personal-data  input {
+        width: 100%;
+        height: 40px;
+        padding: 5px;
+    }
+
+    .clear {
+        margin: 20px
+    }
+}

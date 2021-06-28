@@ -1,0 +1,204 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+body {
+  height: 100vh;
+  width: 100vw;
+  background: #E1E1E1;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Header and Nav */
+
+header {
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw;
+}
+
+header nav {
+    display: flex;
+}
+
+header nav a {
+    text-decoration: none;
+    color: white;
+}
+
+header nav a .list, header nav a .register {
+    height: 100%;
+    text-align: center;
+    background: rgb(24, 23, 23);
+    margin-left: 1.2em;
+    padding: 20px;
+}
+
+header nav a .list:hover, header nav a .register:hover {
+    cursor: pointer;
+}
+
+#list-body header nav a .list,
+#register-body header nav a .register{
+    background: rgb(70, 70, 70);
+}
+
+header .close img{
+    width: 40px;
+    margin: 10px;
+}
+
+header .close img:hover {
+    cursor: pointer;
+}
+
+/* Main */
+
+.main h2{    
+    width: 60vw;
+    height: 20vh;
+    font-size: 40px;
+    margin: 100px auto;
+    text-align: center;
+}
+
+/* Courses */
+
+.main ul {
+    display: flex;
+    list-style: none;
+    padding: 40px;
+    flex-wrap: wrap;
+}
+
+.main .course {
+    background: rgb(255, 255, 255);
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.main .course a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.main .course .course-name {
+    position: absolute;
+    top: 10px;
+    right: 0;
+    left: 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.main .course .course-edit {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    color: white;
+    background: #005DFF;
+    padding: 20px;
+    display: block;
+}
+
+.main .course .course-edit:hover,
+#register-body .main form input[type="submit"]:hover {
+    background: #0542ac;
+    transition: 200ms;
+    cursor: pointer;
+}
+
+/* Register */
+
+#register-body .main {
+    display: block;
+}
+
+#register-body .main form{
+    margin-top: 20px;
+    text-align: center;
+}
+
+#register-body .main form input, #register-body .main form select {
+    height: 40px;
+    width: 400px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+textarea {
+    resize: none;
+    border: 1px solid black;
+    height: 200px;
+    width: 400px;
+    padding: 5px;
+}
+
+#register-body .main form input[type="submit"] {
+    background: #005DFF;
+    color: white;
+    text-transform: uppercase;
+}
+
+#register-body .main form input[type="file"] {
+    margin-top: 20px;
+    background: rgb(187, 187, 187);
+}
+
+/* Edit */
+
+#edit-header {
+    padding: 10px 20px;
+    color: white;
+}
+#edit-header .name {
+    margin-top: 5px;
+}
+
+#edit-header .close img{
+    width: 30px;
+    margin: 0;
+}
+
+#register-body .main #delete {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 425px) {
+    header nav a {
+        font-size: 15px;
+    }
+
+    header nav a .list, header nav a .register {
+        padding: 12px 10px;
+    }
+
+    .main h2{    
+        margin: 0 auto;
+    }
+
+    .main .course {
+        height: 280px;
+        width: 80vw;
+    }
+
+    #register-body .main form input, #register-body .main form select {
+        height: 40px;
+        width: 100vw;
+    }
+    
+    textarea {
+        width: 100vw;
+    }
+}
